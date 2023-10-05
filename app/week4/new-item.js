@@ -51,7 +51,7 @@ export default function NewItem() {
                             className="mt-2 p-1 block w-full rounded-md text-black"
                         />
                         <div className="flex justify-between">
-                            <input type="number" min="1"
+                            <input type="number" min="1" max="99"
                                 required
                                 onChange={handleQuantityChange}
                                 value={quantity}
