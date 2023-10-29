@@ -17,7 +17,7 @@ export default function Page() {
 
     const handleItemSelect = (itemName) => {
         const cleanedItemName = itemName.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|�[�-�]|�[�-�]|[\u2011-\u26FF]|�[�-�])/g, '').trim();
-        console.log('Cleaned item name:', cleanedItemName); // Add this line
+        console.log('Cleaned item name:', cleanedItemName);
         setSelectedItemName(cleanedItemName);
     };
     
@@ -27,11 +27,11 @@ export default function Page() {
                 <h1 className="text-4xl ml-4 mt-4 font-bold">Shopping List🛒</h1>
             </div>
             <div className="flex">
-                <div className="w-1/2">
+                <div className="flex-1 max-w-lg m-4">
                     <NewItem onAddItem={handleAddItem} />
                     <ItemList items={items} onItemSelect={handleItemSelect} />
                 </div>
-                <div className="w-1/2">
+                <div className="flex-1 max-w-lg m-4">
                     <MealIdeas ingredient={selectedItemName} />
                 </div>
             </div>

@@ -64,7 +64,7 @@ const loadMealIdeas = async () => {
           {meals.map((meal) => (
             <div
               key={meal.idMeal}
-              className="bg-indigo-900 rounded-lg p-2 mb-2"
+              className="bg-indigo-900 rounded-lg p-2 mb-2 w-full max-w-md"
             >
               {meal.strMeal}
             </div>

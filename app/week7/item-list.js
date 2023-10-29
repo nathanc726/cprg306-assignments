@@ -24,22 +24,22 @@ export default function ItemList({items, onItemSelect}) {
 
     return (
     <div>
-        <div className="flex m-4 items-center">
+        <div className="flex m-4 ">
             <label className='mr-2'>Sort by:</label>
             <button
-                className={`px-6 py-2 mr-1 rounded-sm ${sortBy === 'name' ? 'bg-green-600' : 'bg-gray-600'}`}
+                className={`px-5 py-2 mr-1 rounded-sm ${sortBy === 'name' ? 'bg-green-600' : 'bg-gray-600'}`}
                 onClick={() => setSortBy('name')}
             >
             Name
             </button>
             <button
-                className={`px-6 py-2 mr-1 rounded-sm ${sortBy === 'category' ? 'bg-green-600' : 'bg-gray-600'}`}
+                className={`px-5 py-2 mr-1 rounded-sm ${sortBy === 'category' ? 'bg-green-600' : 'bg-gray-600'}`}
                 onClick={() => setSortBy('category')}
             >
             Category
             </button>
             <button
-                className={`px-6 py-2 mr-1 rounded-sm ${sortBy === 'grouped category' ? 'bg-green-600' : 'bg-gray-600'}`}
+                className={`px-5 py-2 mr-1 rounded-sm ${sortBy === 'grouped category' ? 'bg-green-600' : 'bg-gray-600'}`}
                 onClick={() => setSortBy('grouped category')}
             >
             Grouped Category
