@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "encoding": "^0.1.13",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
+    "firebase": "^10.5.2",
     "next": "13.5.1",
     "postcss": "^8.4.31",
     "react": "18.2.0",
